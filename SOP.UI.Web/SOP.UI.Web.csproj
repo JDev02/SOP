@@ -181,6 +181,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="ControllerFactory\PoorManDIControllerFactory.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
@@ -307,6 +308,20 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SOP.Business\SOP.Business.csproj">
+      <Project>{29C9488B-BDC8-4D94-B173-F2138AF2E449}</Project>
+      <Name>SOP.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SOP.Data\SOP.Data.csproj">
+      <Project>{A9ECD529-FE20-41F3-86BA-0D67345280DE}</Project>
+      <Name>SOP.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SOP.Domain\SOP.Domain.csproj">
+      <Project>{58470ADF-C498-42C6-B386-9C9569BEADD8}</Project>
+      <Name>SOP.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
